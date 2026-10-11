@@ -57,10 +57,10 @@ stage2msg:
 dap:
 	db 0x10
 	db 0
-	dw 2048
-	dw 0x0
-	dw 0x1000
-	dq 1
+	dw 127 ; sectors to read
+	dw 0x0 ; destination offset
+	dw 0x1000 ; destination segment
+	dq 1 ; starting lba
 
 times 446 - ($ - $$) db 0
 db 0x80, 0x00, 0x01, 0x00, 0x83, 0xFE, 0xFF, 0xFF
