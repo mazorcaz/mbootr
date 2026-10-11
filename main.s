@@ -48,7 +48,7 @@ pstr_end:
 	ret
 
 loadmsg:
-	db "Stage 1 booted", 13, 10, 0
+	db "mbootr 1.0 booted", 13, 10, 0
 errmsg:
 	db "Error loading stage 2", 13, 10, 0
 stage2msg:
