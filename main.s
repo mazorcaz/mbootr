@@ -30,8 +30,8 @@ stage1:
 .err: 
 	mov bx, errmsg
 	call pstr
-.hlt: 
-	jmp .hlt
+
+	jmp $
 
 ; str in bx
 pstr:
